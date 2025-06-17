@@ -1,7 +1,5 @@
 # Ray Tracing w/ Cuda
 
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/5-zirqst)
-
 ## Installation
 
 ### Dependencies
@@ -17,12 +15,12 @@
 2. Download and setup VcXsrv. When launching it, make sure the port number matches the `DISPLAY` Environment Variable. Also, **DISABLE ACCESS CONTROL**.
 3. Edit the SSH config to allow
 
-  ```bash
-  ForwardX11 yes
-  ForwardX11Trusted yes
-  ```
+```bash
+ForwardX11 yes
+ForwardX11Trusted yes
+```
 
-  for the server.
+for the server.
 
 #### Bender Server
 
@@ -72,13 +70,13 @@
 
 8. Run the installation and compilation scripts
 
-    ```bash
-    # install
-    source install.sh
+   ```bash
+   # install
+   source install.sh
 
-    # compile + run (all-in-one!)
-    source run.sh
-    ```
+   # compile + run (all-in-one!)
+   source run.sh
+   ```
 
 ### Controls
 
