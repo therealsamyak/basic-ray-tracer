@@ -1,0 +1,31 @@
+# === Ground Plane ===
+v -3.33 0.0 -3.33   # 1
+v 3.33 0.0 -3.33    # 2
+v 3.33 0.0 3.33     # 3
+v -3.33 0.0 3.33    # 4
+
+# === Backdrop Wall ===
+v -3.33 0.0 -3.33   # 5 (same as ground corner)
+v 3.33 0.0 -3.33    # 6
+v 3.33 3.33 -3.33   # 7
+v -3.33 3.33 -3.33  # 8
+
+# === Floating Tetrahedron ===
+v 0.0 1.5 0.0       # 9 - Top
+v -0.5 0.5 -0.5     # 10 - Base 1
+v 0.5 0.5 -0.5      # 11 - Base 2
+v 0.0 0.5 0.5       # 12 - Base 3
+
+# --- Ground Faces ---
+f 1 2 3
+f 1 3 4
+
+# --- Backdrop Faces ---
+f 5 6 7
+f 5 7 8
+
+# --- Tetrahedron Faces ---
+f 9 10 11
+f 9 11 12
+f 9 12 10
+f 10 12 11
